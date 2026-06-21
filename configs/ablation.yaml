@@ -1,0 +1,12 @@
+experiment:
+  name: ablation
+  seed: 2026
+  output_dir: results/metrics/ablation
+
+data:
+  dataset: TODO
+  path: data/processed
+
+model:
+  name: fmdi
+  ablations: []

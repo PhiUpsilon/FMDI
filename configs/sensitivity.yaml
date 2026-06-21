@@ -1,0 +1,12 @@
+experiment:
+  name: sensitivity
+  seed: 2026
+  output_dir: results/metrics/sensitivity
+
+data:
+  dataset: TODO
+  path: data/processed
+
+model:
+  name: fmdi
+  parameter_grid: {}
