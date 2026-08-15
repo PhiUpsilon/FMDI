@@ -4,14 +4,21 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fmdi"
-version = "0.1.0"
-description = "Official implementation scaffold for FMDI"
+version = "1.0.0"
+description = "Official implementation of FMDI"
 readme = "README.md"
-requires-python = ">=3.10"
-dependencies = ["PyYAML>=6.0"]
+requires-python = ">=3.8"
+dependencies = [
+  "numpy>=1.22",
+  "pandas>=1.4",
+  "PyYAML>=6.0",
+  "torch>=1.12",
+  "tqdm>=4.64",
+  "linear-attention-transformer>=0.19.1",
+]
 
 [project.optional-dependencies]
-dev = ["pytest>=8.0", "ruff>=0.5"]
+dev = ["pytest>=7.0", "ruff>=0.5"]
 
 [project.scripts]
 fmdi = "fmdi.cli:main"
@@ -22,7 +29,7 @@ pythonpath = ["src"]
 
 [tool.ruff]
 line-length = 100
-target-version = "py310"
+target-version = "py38"
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -7,9 +7,11 @@ __pycache__/
 
 data/raw/
 data/processed/
-results/metrics/
-results/checkpoints/
-results/figures/*.pdf
-results/figures/*.png
-results/tables/*.csv
+outputs/
+results/generated/
+results/**/*.csv
+checkpoints/
+*.pth
+*.log
+*.pk
 .env

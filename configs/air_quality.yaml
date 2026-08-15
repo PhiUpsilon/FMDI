@@ -1,0 +1,33 @@
+
+#type: args
+
+
+train:
+  epochs: 200
+  batch_size: 16
+  lr: 1.0e-3
+  itr_per_epoch: 1.0e+8
+
+
+diffusion:
+  layers: 4
+  channels: 64
+  nheads: 8
+  diffusion_embedding_dim: 128
+  beta_start: 0.0001
+  beta_end: 0.5
+  lambda_freq: 0.05
+  num_steps: 50
+  ode_steps: 50
+  schedule: "quad"
+  is_linear: False
+  freq_noise: true
+  freq_shaping_gamma: 1.0
+  seq_len: 36
+  s_vec:
+
+model:
+  is_unconditional: 0
+  timeemb: 128
+  featureemb: 16
+  target_strategy: "mix"

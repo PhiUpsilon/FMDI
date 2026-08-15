@@ -1,0 +1,15 @@
+name: fmdi
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.8
+  - pip
+  - numpy
+  - pandas
+  - pyyaml
+  - tqdm
+  - pytorch
+  - pip:
+      - linear-attention-transformer>=0.19.1
+      - pytest>=7.0
